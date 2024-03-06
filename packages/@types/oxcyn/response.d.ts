@@ -39,7 +39,7 @@ declare module '@oxcyn/response' {
     metadata: S
   }
 
-  export type ErrorResponse = {
+  export type ErrorResponseData = {
     code: ErrorCode
     message: string | undefined
     errors: string[]

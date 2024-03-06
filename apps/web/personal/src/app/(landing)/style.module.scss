@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+.text {
+  &-container {
+    @apply w-full h-full flex items-center fixed left-0 top-0 bg-zinc-900 z-50;
+  }
+
+  &-wrapper {
+    @apply flex justify-center w-full h-36 text-9xl text-center font-extrabold;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    font-family: 'Madimi One', sans-serif;
+
+    .char {
+      transform: translateY(150px);
+      transition: translate 0.5s;
+    }
+  }
+
+  &-slide-out {
+    @apply w-full h-full bg-slate-800;
+    clip-path: ellipse(58% 89% at 51% 100%);
+  }
+}

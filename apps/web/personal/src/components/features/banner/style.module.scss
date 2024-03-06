@@ -1,0 +1,16 @@
+@import '~@/assets/fonts/acorn/stylesheet.scss';
+
+.banner {
+  @apply w-full h-full flex flex-col items-center justify-center;
+  font-family: 'Acorn';
+
+  &-title {
+    @apply text-8xl text-center font-extrabold opacity-0;
+    transform: translateY(-50px);
+  }
+
+  &-subtitle {
+    @apply text-4xl text-center font-extrabold mt-4 opacity-0;
+    transform: translateY(50px);
+  }
+}
